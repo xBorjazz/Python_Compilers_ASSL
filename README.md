@@ -8,20 +8,31 @@ El archivo   *tokens_def.py*   define la clase Token y las reglas de expresión 
 
 *main.py*
 
+Integra el analizador léxico y el sintáctico para ejecutar todo el proceso de traducción en un solo punto. Carga o define un código de ejemplo, lo tokeniza con analizador_lexico.py y luego invoca analizador_sintactico.py para validar la estructura del programa, mostrando mensajes de éxito o error.
+
 ![image](https://github.com/user-attachments/assets/7e38a476-3a99-49f6-b7c2-a030d5f9c12d)
 
 
 *tokens_def.py*
+
+Define la clase Token y la lista de reglas de expresiones regulares que describen los tokens del lenguaje (palabras reservadas, identificadores, números, operadores, etc.). Además, construye una sola expresión regular combinada para reconocerlos y manejar caracteres no válidos, posibilitando así la detección de errores léxicos.
+
 
 ![image](https://github.com/user-attachments/assets/03c642ef-c50a-4665-972d-ffd484da9bdd)
 ![image](https://github.com/user-attachments/assets/13df11d8-8882-43e2-bf30-ead90c810fd2)
 
 *analizador_lexico.py*
 
+Importa la expresión regular y la clase Token de tokens_def.py. Recorre el texto fuente, detecta coincidencias según las reglas definidas y genera objetos Token con su tipo y posición (línea, columna). Ignora comentarios y espacios, y lanza excepciones si halla caracteres no reconocidos.
+
+
 ![image](https://github.com/user-attachments/assets/b9d0ecad-6e5b-4e62-9075-0ada89ae7024)
  ![image](https://github.com/user-attachments/assets/a3149e02-679f-4e96-b535-34a437739c92)
 
 *analizador_sintactico.py*
+
+Recibe la lista de tokens producidos por el lexer y los consume según una gramática recursivo-descendente. Define métodos que corresponden a reglas de producción (program, statement, expression, etc.). Al encontrar un token distinto al esperado, reporta errores sintácticos indicando la ubicación del problema.
+
 
 ![image](https://github.com/user-attachments/assets/a7ea4997-f9d1-4a4c-a1bf-4ead0a7a6aa9)
 ![image](https://github.com/user-attachments/assets/8d1adbf4-852d-45ae-a5cd-64c8793772f9)
