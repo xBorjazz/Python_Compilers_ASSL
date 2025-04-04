@@ -127,11 +127,6 @@ class Parser:
     # Nuevas reglas para EXPRESIONES con operadores relacionales
     # --------------------------------------------------------
     def expression(self):
-        """
-        EXPRESSION -> RELATIONAL_EXPR
-        (en otras gramáticas, podrías mezclar relacional con aritmético,
-         pero aquí lo separamos para mayor claridad).
-        """
         self.relational_expr()
 
     def relational_expr(self):

@@ -1,0 +1,13 @@
+int x = 10       // Error: falta el punto y coma al final
+
+float y = 3.14;
+y = y + % 2;     // Error: '%' no es un operador reconocido por la gramática
+
+fi (x == 10) {   // Error: se usa 'fi' en vez de 'if'
+    print(x);
+}
+
+while (x < 20)
+    x = x + 1;   // Error: no hay llaves para el while según la gramática
+
+z = 5;           // Error: 'z' no está declarado con int/float

@@ -6,7 +6,7 @@ def main():
     # Ejemplo de código a analizar:
     code = """
     int x = 10;
-    if (x < 20) {
+    if (x </ 20) {
         print(x);
     }
     """
