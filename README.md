@@ -1,4 +1,6 @@
-*Proyecto Analizador Léxico*
+*Proyecto validacion JavaScript*
+
+![image](https://github.com/user-attachments/assets/435975c1-84eb-4930-81d8-a60540565cc7)
 
 
 
