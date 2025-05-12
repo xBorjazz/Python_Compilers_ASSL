@@ -1,0 +1,69 @@
+{
+  "schema": {
+    "nombre": {
+      "_def": {
+        "checks": [],
+        "typeName": "ZodString",
+        "coerce": false
+      },
+      "~standard": {
+        "version": 1,
+        "vendor": "zod"
+      }
+    },
+    "edad": {
+      "_def": {
+        "checks": [
+          {
+            "kind": "int"
+          },
+          {
+            "kind": "min",
+            "value": 18,
+            "inclusive": true
+          }
+        ],
+        "typeName": "ZodNumber",
+        "coerce": false
+      },
+      "~standard": {
+        "version": 1,
+        "vendor": "zod"
+      }
+    },
+    "estudiante": {
+      "_def": {
+        "typeName": "ZodBoolean",
+        "coerce": false
+      },
+      "~standard": {
+        "version": 1,
+        "vendor": "zod"
+      }
+    }
+  },
+  "tree": {
+    "name": "Schema",
+    "children": [
+      {
+        "name": "nombre",
+        "type": "string",
+        "children": []
+      },
+      {
+        "name": "edad",
+        "type": "int",
+        "children": [
+          {
+            "name": "min: 18"
+          }
+        ]
+      },
+      {
+        "name": "estudiante",
+        "type": "boolean",
+        "children": []
+      }
+    ]
+  }
+}
