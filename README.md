@@ -1,3 +1,3 @@
-*Proyecto Analizador Léxico*
+*Practica Analizador Semantico*
 
-![image](https://github.com/user-attachments/assets/db569189-91e0-4824-a9d8-36114d8f48f8)
+![image](https://github.com/user-attachments/assets/3f4f8d64-7430-4eff-a284-da61a81d66a3)
