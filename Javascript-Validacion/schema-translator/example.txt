@@ -1,0 +1,3 @@
+int edad min:18 max:99
+string nombre
+boolean estudiante

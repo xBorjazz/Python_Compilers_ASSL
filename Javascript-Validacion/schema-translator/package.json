@@ -1,0 +1,13 @@
+{
+    "name": "schema-translator",
+    "version": "1.0.0",
+    "description": "Traductor de esquemas amigables a Zod",
+    "main": "translator.js",
+    "scripts": {
+      "start": "node translator.js"
+    },
+    "dependencies": {
+      "zod": "^3.22.2"
+    }
+  }
+  

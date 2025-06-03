@@ -1,0 +1,20 @@
+// Árbol del Esquema
+digraph {
+	root [label=Programa]
+	node_0 [label=edad]
+	root -> node_0
+	node_0_type [label=int]
+	node_0 -> node_0_type
+	node_0_rule_0 [label="min:18"]
+	node_0 -> node_0_rule_0
+	node_0_rule_1 [label="max:99"]
+	node_0 -> node_0_rule_1
+	node_1 [label=nombre]
+	root -> node_1
+	node_1_type [label=string]
+	node_1 -> node_1_type
+	node_2 [label=estudiante]
+	root -> node_2
+	node_2_type [label=boolean]
+	node_2 -> node_2_type
+}

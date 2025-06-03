@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualización del Archivo JSON</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #output {
+      white-space: pre-wrap;
+      background-color: #f4f4f4;
+      padding: 10px;
+      border: 1px solid #ddd;
+      overflow: auto;
+      max-height: 500px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Visualización del Archivo JSON</h1>
+  <h2>Esquema JSON:</h2>
+  <pre id="output">Cargando...</pre>
+
+  <script>
+    // Carga el archivo output.json y muestra su contenido
+    fetch('./output.json')
+      .then(response => response.json())
+      .then(data => {
+        const output = document.getElementById('output');
+        output.textContent = JSON.stringify(data, null, 2); // Formatea el JSON con sangría
+      })
+      .catch(error => {
+        console.error('Error al cargar el archivo output.json:', error);
+        document.getElementById('output').textContent = 'Error al cargar el archivo JSON.';
+      });
+  </script>
+</body>
+</html>
