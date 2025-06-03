@@ -8,5 +8,7 @@
 
 ![image](https://github.com/user-attachments/assets/a588ff42-afe7-4d46-899b-339ae25ef716)
 
+![image](https://github.com/user-attachments/assets/bedf9c99-5ea9-4af6-8044-238765a579f4)
+
 Analizador Semántico
 ![image](https://github.com/user-attachments/assets/ac618ce8-728d-41bb-821c-2eaf86364f04)
